@@ -1,8 +1,8 @@
 /*
 * @Author: Rosen
 * @Date:   2017-05-28 19:45:49
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-29 18:39:01
+* @Last Modified by:   gwr0-0
+* @Last Modified time: 2017-12-03 16:52:53
 */
 
 'use strict';
@@ -84,7 +84,7 @@ var page = {
     },
     // 数据匹配
     filter : function(data){
-        data.subImages = data.subImages.split(',');
+        data.subImages = data.subImages.split(",");
     }
 };
 $(function(){
