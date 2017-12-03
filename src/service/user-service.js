@@ -1,8 +1,8 @@
 /*
 * @Author: Rosen
 * @Date:   2017-05-17 17:04:32
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-24 17:11:19
+* @Last Modified by:   gwr0-0
+* @Last Modified time: 2017-12-03 17:45:44
 */
 
 'use strict';
@@ -87,7 +87,7 @@ var _user = {
     // 获取用户信息
     getUserInfo : function(resolve, reject){
         _mm.request({
-            url     : _mm.getServerUrl('/user/get_information.do'),
+            url     : _mm.getServerUrl('/user/get_user_information.do.do'),
             method  : 'POST',
             success : resolve,
             error   : reject
@@ -96,7 +96,7 @@ var _user = {
     // 更新个人信息
     updateUserInfo : function(userInfo, resolve, reject){
         _mm.request({
-            url     : _mm.getServerUrl('/user/update_information.do'),
+            url     : _mm.getServerUrl('/user/update_user_information.do'),
             data    : userInfo,
             method  : 'POST',
             success : resolve,
